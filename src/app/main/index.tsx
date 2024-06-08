@@ -183,7 +183,7 @@ export default function Main() {
               `}
               onClick={() => window.open("https://ripe-launch-04b.notion.site/feeed-0232a8f9d9724a4ea9bc244c1eeba78b?pvs=4")}
             >
-              이메일 등록 방법이 궁금하신가요?
+              블로그 등록 방법이 궁금하신가요?
             </span>
           </div>
         </div>
