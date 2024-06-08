@@ -67,16 +67,17 @@ export default function Main() {
   return (
     <section
       css={css`
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+        //position: absolute;
+        //top: 50%;
+        //left: 50%;
+        //transform: translate(-50%, -50%);
         max-width: 130rem;
         width: 100%;
         height: 100%;
 
         display: grid;
         grid-template-columns: 1fr 1fr;
+        margin: 0 auto;
 
         @media screen and (max-width: 1024px) {
           /* 타블렛 가로 */
@@ -177,7 +178,11 @@ export default function Main() {
           </div>
         </div>
       </article>
-      <article>
+      <article
+        css={css`
+          position: relative;
+        `}
+      >
         <div
           css={css`
             height: 100%;
@@ -212,7 +217,7 @@ export default function Main() {
                 grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
                 row-gap: 2rem;
                 column-gap: 2rem;
-                padding: 2rem 0 0 0;
+                padding: 2rem 0 2rem 0;
                 overflow-y: auto;
                 height: calc(100vh - 2rem);
                 position: relative;
