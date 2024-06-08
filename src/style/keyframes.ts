@@ -9,6 +9,29 @@ export const fadeIn = keyframes`
     }
 `;
 
+export const loadingFade = keyframes`
+  0% {
+    opacity: 15%;
+  }
+
+  25% {
+    opacity: 30%;
+  }
+
+  50% {
+    opacity: 15%;
+  }
+
+  75% {
+    opacity: 30%;
+  }
+
+  100% {
+    opacity: 15%;
+  }
+
+`;
+
 export const fadeUp = keyframes`
     0% {
         transform : translateY(0.5rem);

@@ -5,7 +5,7 @@ import { useApiParseBlog } from "@/api/parser.ts";
 import FeeedLogo from "@/assets/feeed-black.svg?react";
 import FeeedBox from "@/assets/feeed-box.png";
 import ArticleCard from "@/component/common/articleCard.tsx";
-import { fadeIn } from "@/style/keyframes.ts";
+import { loadingFade } from "@/style/keyframes.ts";
 import { DESIGN_SYSTEM_COLOR } from "@/style/variable.ts";
 
 export interface feedProps {
@@ -218,16 +218,17 @@ export default function Main() {
                 position: relative;
               `}
             >
-              {isLoading && (
+              {!isLoading && (
                 <FeeedLogo
                   css={css`
-                    animation: ${fadeIn} 0.4s infinite;
-                    filter: opacity(0.15) grayscale(1);
-                    opacity: 10%;
-                    position: relative;
+                    animation: ${loadingFade} 2s infinite;
+                    filter: opacity(0.4) grayscale(1);
+                    position: absolute;
                     top: 50%;
                     left: 50%;
                     transform: translate(-50%, -50%);
+                    width: 13rem;
+                    height: auto;
                   `}
                 />
               )}
