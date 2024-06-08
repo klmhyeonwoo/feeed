@@ -67,10 +67,6 @@ export default function Main() {
   return (
     <section
       css={css`
-        //position: absolute;
-        //top: 50%;
-        //left: 50%;
-        //transform: translate(-50%, -50%);
         max-width: 130rem;
         width: 100%;
         height: 100%;
@@ -114,6 +110,10 @@ export default function Main() {
               /* 타블렛 가로 */
               margin-bottom: 20rem;
             }
+            @media screen and (max-width: 899px) {
+              /* 모바일 가로, 타블렛 세로 */
+              width: 13rem;
+            }
           `}
         />
         <FeeedLogo
@@ -124,6 +124,11 @@ export default function Main() {
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
+
+            @media screen and (max-width: 899px) {
+              /* 모바일 가로, 타블렛 세로 */
+              width: 11rem;
+            }
           `}
         />
         <div
@@ -139,6 +144,11 @@ export default function Main() {
             flex-direction: column;
             row-gap: 1rem;
             text-align: center;
+
+            @media screen and (max-width: 899px) {
+              /* 모바일 가로, 타블렛 세로 */
+              margin-top: 11rem;
+            }
           `}
         >
           <div>
@@ -154,7 +164,7 @@ export default function Main() {
                   font-weight: 500;
                 `}
               >
-                {" 7명"}
+                {" 8명"}
               </span>
               의 개발자들이 피드에 블로그를 등록했어요
             </span>
@@ -202,6 +212,11 @@ export default function Main() {
               display: grid;
               flex-direction: column;
               row-gap: 2rem;
+
+              @media screen and (max-width: 899px) {
+                /* 모바일 가로, 타블렛 세로 */
+                row-gap: 0rem;
+              }
             `}
           >
             <span
