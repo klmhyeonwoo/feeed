@@ -79,6 +79,9 @@ devDependencies:
   vite:
     specifier: ^5.2.0
     version: 5.2.11(@types/node@20.12.12)
+  vite-plugin-radar:
+    specifier: ^0.9.6
+    version: 0.9.6(vite@5.2.11)
   vite-plugin-svgr:
     specifier: ^4.2.0
     version: 4.2.0(typescript@5.4.5)(vite@5.2.11)
@@ -3556,6 +3559,14 @@ packages:
     resolution: {integrity: sha512-7rKUyy33Q1yc98pQ1DAmLtwX109F7TIfWlW1Ydo8Wl1ii1SeHieeh0HHfPeL2fMXK6z0s8ecKs9frCuLJvndBg==}
     dependencies:
       punycode: 2.3.1
+    dev: true
+
+  /vite-plugin-radar@0.9.6(vite@5.2.11):
+    resolution: {integrity: sha512-tLvUt7+iZznxYa8GmCrZBV3Q0fLQApsyg9EIJgaen8DjGky3vFIq9KoDWAoVMs9FZ5qbsSBb3YfSvoqwVV+5xw==}
+    peerDependencies:
+      vite: ^2.0.0 || ^3.0.0 || ^4.0.0 || ^5.0.0 || ^6.0.0
+    dependencies:
+      vite: 5.2.11(@types/node@20.12.12)
     dev: true
 
   /vite-plugin-svgr@4.2.0(typescript@5.4.5)(vite@5.2.11):
