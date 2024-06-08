@@ -209,7 +209,7 @@ export default function Main() {
             <div
               css={css`
                 display: grid;
-                grid-template-columns: 1fr 1fr;
+                grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
                 row-gap: 2rem;
                 column-gap: 2rem;
                 padding: 2rem 0 0 0;
@@ -218,7 +218,7 @@ export default function Main() {
                 position: relative;
               `}
             >
-              {!isLoading && (
+              {isLoading && (
                 <FeeedLogo
                   css={css`
                     animation: ${loadingFade} 2s infinite;
