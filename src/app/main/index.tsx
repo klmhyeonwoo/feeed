@@ -164,7 +164,7 @@ export default function Main() {
                   font-weight: 500;
                 `}
               >
-                {" 8명"}
+                {" 9명"}
               </span>
               의 개발자들이 피드에 블로그를 등록했어요
             </span>
