@@ -23,6 +23,7 @@
 #### Core
 - React
 - TypeScript
+- Python
 
 #### Data Fetch
 - Axios
@@ -36,3 +37,6 @@
   - radar plugin
   - svgr plugin
 - pnpm
+
+#### Continius Integration
+- Git Action
